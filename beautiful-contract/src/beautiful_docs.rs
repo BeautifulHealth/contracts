@@ -19,9 +19,6 @@ pub trait beautiful_docs {
     fn cids(&self) -> MapMapper<u32, bool>;
 
 
-    #[init]
-    fn init(&self) {}
-
     #[upgrade]
     fn upgrade(&self) {}
 

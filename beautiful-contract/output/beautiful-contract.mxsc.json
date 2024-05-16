@@ -17,9 +17,6 @@
         }
     },
     "abi": {
-        "docs": [
-            "An empty contract. To be used as a template when starting a new contract from scratch."
-        ],
         "name": "beautiful_indexer",
         "constructor": {
             "inputs": [],
