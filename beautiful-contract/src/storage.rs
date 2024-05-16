@@ -16,14 +16,5 @@ pub trait StorageModule {
     
     #[storage_mapper("epr_index")]
     fn epr_index(&self) -> SingleValueMapper<ManagedAddress>;
-
-
-    // #[init]
-    // fn init(&self, _access_store: ManagedAddress, _users: ManagedAddress, _epr_index: ManagedAddress) {
-    //     self.access_store().set(_access_store);
-    //     self.users().set(_users);
-    //     self.epr_index().set(_epr_index);
-    // }
-
     
 }

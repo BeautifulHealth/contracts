@@ -1,10 +1,11 @@
 #![no_std]
 
-pub mod beautiful_docs;
 mod helpers;
 mod constants;
 mod storage;
 mod patient_info;
+mod user_info;
+mod user_management;
 
 use constants::*;
 

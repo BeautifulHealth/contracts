@@ -2,7 +2,8 @@ use multiversx_sc::imports::*;
 
 use crate::{
     constants::*,
-    patient_info::{PatientInfo},
+    patient_info::{PatientInfo, AccessLog},
+    user_info::{UserInfo},
     storage,
 };
 

@@ -1,5 +1,5 @@
 [workspace]
 members = [
-  "ping-pong",
-  "ping-pong/meta"
+  "beautiful-contract",
+  "beautiful-contract/meta"
 ]
