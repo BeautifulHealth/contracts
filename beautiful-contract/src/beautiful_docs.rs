@@ -6,10 +6,11 @@ use multiversx_sc::{
     derive_imports::*,
 };
 use multiversx_sc::{
-    api::ManagedTypeApi,
+    api::{self, ManagedTypeApi},
     types::{ManagedAddress, ManagedBuffer, ManagedVec},
 };
 use multiversx_sc::proxy_imports::heap::String;
+use multiversx_sc::proxy_imports::heap::Vec;
 
 use crate::beautiful_utils;
 
@@ -17,7 +18,7 @@ pub type UserID = u64;
 pub type EprID = u64;
 pub type SubjectKey = u64;
 pub type Cid = String;
-pub type MetaArr<M> = ManagedVec<M, beautiful_utils::DocMeta<M>>;
+// pub type MetaArr<M: ManagedTypeApi> = Vec<beautiful_utils::DocMeta<M>>;
 
 #[multiversx_sc::module]
 pub trait DocsModule {
@@ -31,7 +32,7 @@ pub trait DocsModule {
     fn cids(&self, user_addr: ManagedAddress) -> SingleValueMapper<Cid>;
 
     // #[storage_mapper("epr_docs")]
-    // fn epr_docs(&self, epr_id: EprID) -> SingleValue<MetaArr<M>>;
+    // fn epr_docs<M: ManagedTypeApi>(&self, epr_id: EprID) -> SingleValue<MetaArr<M>>;
 
     #[endpoint]
     fn set_epr_user(&self, id: UserID, epr_id: EprID) {

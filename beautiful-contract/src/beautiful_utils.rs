@@ -40,13 +40,6 @@ pub struct DocMeta<M: ManagedTypeApi> {
     pub attr: ManagedVec<M, ManagedBuffer<M>>
 }
 
-impl<M> DocMeta<M>
-where
-    M: ManagedTypeApi,
-{
-
-}
-
 #[derive(TopEncode, TopDecode, NestedEncode, NestedDecode)]
 pub enum Code {
     Status,
