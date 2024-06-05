@@ -1,0 +1,11 @@
+{
+  "name": "beautiful-health",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/BeautifulHealth/contracts.git",
+  "author": "Doc Akan <fibrinlab@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
+}
