@@ -1,8 +1,9 @@
 #![no_std]
 
-mod helpers;
-mod constants;
 mod storage;
+
+mod docs;
+mod constants;
 mod patient_info;
 mod user_info;
 mod user_management;
@@ -21,6 +22,9 @@ pub trait beautiful_indexer {
     #[init]
     fn initialise(&self) {
     }
+
+    #[endpoint]
+    fn register_user(&self) {} 
 
     
 }

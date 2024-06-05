@@ -1,1 +1,1 @@
-# ping-pong-smart-contract
+## Beautiful contracts

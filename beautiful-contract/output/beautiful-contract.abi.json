@@ -21,7 +21,14 @@
         "inputs": [],
         "outputs": []
     },
-    "endpoints": [],
+    "endpoints": [
+        {
+            "name": "register_user",
+            "mutability": "mutable",
+            "inputs": [],
+            "outputs": []
+        }
+    ],
     "esdtAttributes": [],
     "hasCallback": false,
     "types": {}
