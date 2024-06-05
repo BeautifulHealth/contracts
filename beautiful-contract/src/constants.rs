@@ -1,1 +1,0 @@
-pub const NON_EXISTENT_KEY_ERR_MSG: &[u8] = b"non-existent key";

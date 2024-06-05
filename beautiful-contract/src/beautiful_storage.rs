@@ -3,6 +3,7 @@
 #[allow(unused_imports)]
 use multiversx_sc::{
     imports::*,
+    derive_imports::*,
 };
 
 #[multiversx_sc::module]

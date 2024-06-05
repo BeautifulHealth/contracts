@@ -1,14 +1,13 @@
 #![no_std]
 
-mod storage;
-
-mod docs;
-mod constants;
+pub mod beautiful_storage;
+pub mod beautiful_utils;
+pub mod beautiful_docs;
+pub mod beautiful_doc_groups;
 mod patient_info;
 mod user_info;
 mod user_management;
 
-use constants::*;
 
 #[allow(unused_imports)]
 use multiversx_sc::{
