@@ -18,7 +18,7 @@ pub type UserID = u64;
 pub type EprID = u64;
 pub type SubjectKey = u64;
 pub type Cid = String;
-// pub type MetaArr<M: ManagedTypeApi> = Vec<beautiful_utils::DocMeta<M>>;
+pub type MetaArr<M> = Vec<beautiful_utils::DocMeta<M>>;
 
 #[multiversx_sc::module]
 pub trait DocsModule {
@@ -32,7 +32,7 @@ pub trait DocsModule {
     fn cids(&self, user_addr: ManagedAddress) -> SingleValueMapper<Cid>;
 
     // #[storage_mapper("epr_docs")]
-    // fn epr_docs<M: ManagedTypeApi>(&self, epr_id: EprID) -> SingleValue<MetaArr<M>>;
+    // fn epr_docs<M: multiversx_sc::api::ManagedTypeApi>(&self, epr_id: EprID) -> SingleValue<MetaArr<M>>;
 
     #[endpoint]
     fn set_epr_user(&self, id: UserID, epr_id: EprID) {

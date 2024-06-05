@@ -4,9 +4,9 @@ pub mod beautiful_storage;
 pub mod beautiful_utils;
 pub mod beautiful_docs;
 pub mod beautiful_doc_groups;
+pub mod beautiful_users;
 mod patient_info;
 mod user_info;
-mod user_management;
 
 
 #[allow(unused_imports)]
