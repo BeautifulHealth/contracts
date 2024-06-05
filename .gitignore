@@ -15,4 +15,6 @@ packages/beautiful-contract/.vscode
 
 target/**
 
+packages/distributed-storage/bin
+
 packages/pistachio/env
