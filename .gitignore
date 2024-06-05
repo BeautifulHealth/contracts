@@ -18,3 +18,6 @@ target/**
 packages/distributed-storage/bin
 
 packages/pistachio/env
+packages/pistachio/app/__pycache__/
+packages/pistachio/app/api/__pycache__
+.venv

@@ -41,7 +41,7 @@ pub struct DocMeta<M: ManagedTypeApi> {
     pub attr: ManagedVec<M, ManagedBuffer<M>>
 }
 
-#[derive(TopEncode, TopDecode, NestedEncode, NestedDecode)]
+#[derive(TopEncode, TopDecode, NestedEncode, NestedDecode, TypeAbi)]
 pub enum Code {
     Status,
     IDEncr,
@@ -57,7 +57,7 @@ pub enum Code {
     DataIndexID
 }
 
-#[derive(NestedEncode, NestedDecode, TopEncode, TopDecode)]
+#[derive(NestedEncode, NestedDecode, TopEncode, TopDecode, TypeAbi)]
 pub struct Attribute {
     pub code: Code,
     pub value: u64,
@@ -85,14 +85,14 @@ pub struct DocumentGroup {
 // }
 
 
-#[derive(TopEncode, TopDecode, NestedEncode, NestedDecode)]
+#[derive(TopEncode, TopDecode, NestedEncode, NestedDecode, TypeAbi)]
 pub enum Role { Patient, Doctor }
 
 #[derive(NestedEncode, NestedDecode, TopEncode, TopDecode)]
 pub struct User <M: ManagedTypeApi> {
     pub ID_hash: ManagedBuffer<M>,
     pub role: Role,
-    pub attr: Vec<Attribute>
+    // pub attr: Vec<Attribute>
 }
 
 #[derive(NestedEncode, NestedDecode, TopEncode, TopDecode)]
