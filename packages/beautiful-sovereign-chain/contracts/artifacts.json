@@ -1,0 +1,82 @@
+{
+    "buildMetadata": {
+        "builderName": "multiversx/sdk-rust-contract-builder:v6.0.0",
+        "versionRust": "nightly-2023-12-11",
+        "versionBinaryen": "version_112",
+        "versionWabt": "1.0.27-1",
+        "versionScTool": "0.43.3",
+        "targetPlatform": "linux/amd64"
+    },
+    "buildOptions": {
+        "packageWholeProjectSrc": false,
+        "specificContract": null,
+        "cargoTargetDir": "/rust/cargo-target-dir",
+        "noWasmOpt": false,
+        "buildRootFolder": "/tmp/project"
+    },
+    "contracts": {
+        "chain-config": {
+            "version": "0.0.0",
+            "codehash": "120409821b78578253bc630278d4cad6fb735800b7e9d576dc06d300d7f7e343",
+            "artifacts": {
+                "bytecode": "chain-config.wasm",
+                "abi": "chain-config.abi.json",
+                "srcPackage": "chain-config-0.0.0.source.json"
+            }
+        },
+        "chain-factory": {
+            "version": "0.0.0",
+            "codehash": "1878c520e4afdaf102e384692d2cb42edde3a0f687ba1e7cd7caf65e3f0f4345",
+            "artifacts": {
+                "bytecode": "chain-factory.wasm",
+                "abi": "chain-factory.abi.json",
+                "srcPackage": "chain-factory-0.0.0.source.json"
+            }
+        },
+        "esdt-safe": {
+            "version": "0.0.0",
+            "codehash": "d4cbfee0a1959916c8c8884213618af550a15a5a9403a231977eeee899b94282",
+            "artifacts": {
+                "bytecode": "esdt-safe.wasm",
+                "abi": "esdt-safe.abi.json",
+                "srcPackage": "esdt-safe-0.0.0.source.json"
+            }
+        },
+        "fee-market": {
+            "version": "0.0.0",
+            "codehash": "5b64247a5663fba45121d636b707c4a0ea1dd0a08f56feeaf3d1bcb6279f1f07",
+            "artifacts": {
+                "bytecode": "fee-market.wasm",
+                "abi": "fee-market.abi.json",
+                "srcPackage": "fee-market-0.0.0.source.json"
+            }
+        },
+        "multisigverifier": {
+            "version": "0.0.0",
+            "codehash": "3ef116196afcda8d8e1c5b19e0bcb2f48661c519828120830ebcc4b17dd84f2f",
+            "artifacts": {
+                "bytecode": "multisigverifier.wasm",
+                "abi": "multisigverifier.abi.json",
+                "srcPackage": "multisigverifier-0.0.0.source.json"
+            }
+        },
+        "pair-mock": {
+            "version": "0.0.0",
+            "codehash": "cfd46fff29b61083786bd10e3d2ab604ddeef8fe34ee8c82fd9f4d7ca5f25e1f",
+            "artifacts": {
+                "bytecode": "pair-mock.wasm",
+                "abi": "pair-mock.abi.json",
+                "srcPackage": "pair-mock-0.0.0.source.json"
+            }
+        },
+        "router-mock": {
+            "version": "0.0.0",
+            "codehash": "d9e3275e4ec5798af4c3320020ebfd3388d3f1dfdabac93a7219714c0353dcfc",
+            "artifacts": {
+                "bytecode": "router-mock.wasm",
+                "abi": "router-mock.abi.json",
+                "srcPackage": "router-mock-0.0.0.source.json"
+            }
+        }
+    }
+}

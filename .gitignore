@@ -17,4 +17,6 @@ target/**
 
 packages/distributed-storage/bin
 
+wallet.pem
+
 packages/pistachio/env

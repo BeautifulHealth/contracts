@@ -1,0 +1,94 @@
+{
+    "schemaVersion": "2.0.0",
+    "metadata": {
+        "contractName": "router-mock",
+        "contractVersion": "0.0.0",
+        "buildMetadata": {
+            "builderName": "multiversx/sdk-rust-contract-builder:v6.0.0",
+            "versionRust": "nightly-2023-12-11",
+            "versionBinaryen": "version_112",
+            "versionWabt": "1.0.27-1",
+            "versionScTool": "0.43.3",
+            "targetPlatform": "linux/amd64"
+        },
+        "buildOptions": {
+            "packageWholeProjectSrc": false,
+            "specificContract": null,
+            "cargoTargetDir": "/rust/cargo-target-dir",
+            "noWasmOpt": false,
+            "buildRootFolder": "/tmp/project"
+        }
+    },
+    "entries": [
+        {
+            "path": "router-mock/Cargo.toml",
+            "content": "W3BhY2thZ2VdCm5hbWUgPSAicm91dGVyLW1vY2siCnZlcnNpb24gPSAiMC4wLjAiCmF1dGhvcnMgPSBbICJ5b3UiLF0KZWRpdGlvbiA9ICIyMDIxIgpwdWJsaXNoID0gZmFsc2UKCltsaWJdCnBhdGggPSAic3JjL3JvdXRlcl9tb2NrLnJzIgoKW2RlcGVuZGVuY2llcy5tdWx0aXZlcnN4LXNjXQp2ZXJzaW9uID0gIjAuNDguMCIK",
+            "module": "router-mock",
+            "dependencyDepth": 0,
+            "isTestFile": false
+        },
+        {
+            "path": "router-mock/meta/Cargo.toml",
+            "content": "W3BhY2thZ2VdCm5hbWUgPSAicm91dGVyLW1vY2stbWV0YSIKdmVyc2lvbiA9ICIwLjAuMCIKZWRpdGlvbiA9ICIyMDIxIgpwdWJsaXNoID0gZmFsc2UKCltkZXBlbmRlbmNpZXMucm91dGVyLW1vY2tdCnBhdGggPSAiLi4iCgpbZGVwZW5kZW5jaWVzLm11bHRpdmVyc3gtc2MtbWV0YV0KdmVyc2lvbiA9ICIwLjQ4LjAiCmRlZmF1bHQtZmVhdHVyZXMgPSBmYWxzZQo=",
+            "module": "router-mock",
+            "dependencyDepth": 0,
+            "isTestFile": false
+        },
+        {
+            "path": "router-mock/meta/src/main.rs",
+            "content": "Zm4gbWFpbigpIHsKICAgIG11bHRpdmVyc3hfc2NfbWV0YTo6Y2xpX21haW46Ojxyb3V0ZXJfbW9jazo6QWJpUHJvdmlkZXI+KCk7Cn0K",
+            "module": "router-mock",
+            "dependencyDepth": 0,
+            "isTestFile": false
+        },
+        {
+            "path": "router-mock/multiversx.json",
+            "content": "ewogICAgImxhbmd1YWdlIjogInJ1c3QiCn0=",
+            "module": "router-mock",
+            "dependencyDepth": 0,
+            "isTestFile": false
+        },
+        {
+            "path": "router-mock/src/router_mock.rs",
+            "content": "IyFbbm9fc3RkXQoKbXVsdGl2ZXJzeF9zYzo6aW1wb3J0cyEoKTsKCiNbbXVsdGl2ZXJzeF9zYzo6Y29udHJhY3RdCnB1YiB0cmFpdCBSb3V0ZXJNb2NrIHsKICAgICNbaW5pdF0KICAgIGZuIGluaXQoJnNlbGYsIHBhaXJfYWRkcjogTWFuYWdlZEFkZHJlc3MsIHVzZGNfdG9rZW5faWQ6IFRva2VuSWRlbnRpZmllcikgewogICAgICAgIHNlbGYucGFpcl9hZGRyZXNzKCkuc2V0KHBhaXJfYWRkcik7CiAgICAgICAgc2VsZi51c2RjX3Rva2VuX2lkKCkuc2V0KHVzZGNfdG9rZW5faWQpOwogICAgfQoKICAgICNbdmlldyhnZXRQYWlyKV0KICAgIGZuIGdldF9wYWlyKAogICAgICAgICZzZWxmLAogICAgICAgIGZpcnN0X3Rva2VuX2lkOiBUb2tlbklkZW50aWZpZXIsCiAgICAgICAgc2Vjb25kX3Rva2VuX2lkOiBUb2tlbklkZW50aWZpZXIsCiAgICApIC0+IE1hbmFnZWRBZGRyZXNzIHsKICAgICAgICBsZXQgdXNkY190b2tlbl9pZCA9IHNlbGYudXNkY190b2tlbl9pZCgpLmdldCgpOwogICAgICAgIGlmIGZpcnN0X3Rva2VuX2lkID09IHVzZGNfdG9rZW5faWQgfHwgc2Vjb25kX3Rva2VuX2lkID09IHVzZGNfdG9rZW5faWQgewogICAgICAgICAgICBzZWxmLnBhaXJfYWRkcmVzcygpLmdldCgpCiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgTWFuYWdlZEFkZHJlc3M6Onplcm8oKQogICAgICAgIH0KICAgIH0KCiAgICAjW3N0b3JhZ2VfbWFwcGVyKCJwYWlyQWRkcmVzcyIpXQogICAgZm4gcGFpcl9hZGRyZXNzKCZzZWxmKSAtPiBTaW5nbGVWYWx1ZU1hcHBlcjxNYW5hZ2VkQWRkcmVzcz47CgogICAgI1tzdG9yYWdlX21hcHBlcigidXNkY1Rva2VuSWQiKV0KICAgIGZuIHVzZGNfdG9rZW5faWQoJnNlbGYpIC0+IFNpbmdsZVZhbHVlTWFwcGVyPFRva2VuSWRlbnRpZmllcj47Cn0K",
+            "module": "router-mock",
+            "dependencyDepth": 0,
+            "isTestFile": false
+        },
+        {
+            "path": "router-mock/tests/router_mock_scenario_go_test.rs",
+            "content": "dXNlIG11bHRpdmVyc3hfc2Nfc2NlbmFyaW86Oio7CgpmbiB3b3JsZCgpIC0+IFNjZW5hcmlvV29ybGQgewogICAgU2NlbmFyaW9Xb3JsZDo6dm1fZ28oKQp9CgojW3Rlc3RdCmZuIGVtcHR5X2dvKCkgewogICAgd29ybGQoKS5ydW4oInNjZW5hcmlvcy9yb3V0ZXJfbW9jay5zY2VuLmpzb24iKTsKfQo=",
+            "module": "router-mock",
+            "dependencyDepth": 0,
+            "isTestFile": true
+        },
+        {
+            "path": "router-mock/tests/router_mock_scenario_rs_test.rs",
+            "content": "dXNlIG11bHRpdmVyc3hfc2Nfc2NlbmFyaW86Oio7CgpmbiB3b3JsZCgpIC0+IFNjZW5hcmlvV29ybGQgewogICAgbGV0IG11dCBibG9ja2NoYWluID0gU2NlbmFyaW9Xb3JsZDo6bmV3KCk7CiAgICAvLyBibG9ja2NoYWluLnNldF9jdXJyZW50X2Rpcl9mcm9tX3dvcmtzcGFjZSgicmVsYXRpdmUgcGF0aCB0byB5b3VyIHdvcmtzcGFjZSwgaWYgYXBwbGljYWJsZSIpOwoKICAgIGJsb2NrY2hhaW4ucmVnaXN0ZXJfY29udHJhY3QoIm14c2M6b3V0cHV0L3JvdXRlci1tb2NrLm14c2MuanNvbiIsIHJvdXRlcl9tb2NrOjpDb250cmFjdEJ1aWxkZXIpOwogICAgYmxvY2tjaGFpbgp9CgojW3Rlc3RdCmZuIGVtcHR5X3JzKCkgewogICAgd29ybGQoKS5ydW4oInNjZW5hcmlvcy9yb3V0ZXJfbW9jay5zY2VuLmpzb24iKTsKfQo=",
+            "module": "router-mock",
+            "dependencyDepth": 0,
+            "isTestFile": true
+        },
+        {
+            "path": "router-mock/wasm/Cargo.lock",
+            "content": "IyBUaGlzIGZpbGUgaXMgYXV0b21hdGljYWxseSBAZ2VuZXJhdGVkIGJ5IENhcmdvLgojIEl0IGlzIG5vdCBpbnRlbmRlZCBmb3IgbWFudWFsIGVkaXRpbmcuCnZlcnNpb24gPSAzCgpbW3BhY2thZ2VdXQpuYW1lID0gImFycmF5dmVjIgp2ZXJzaW9uID0gIjAuNy40Igpzb3VyY2UgPSAicmVnaXN0cnkraHR0cHM6Ly9naXRodWIuY29tL3J1c3QtbGFuZy9jcmF0ZXMuaW8taW5kZXgiCmNoZWNrc3VtID0gIjk2ZDMwYTA2NTQxZmJhZmJjN2Y4MmVkMTBjMDYxNjRjZmJkMmM0MDExMzhmNmFkZGQ4NDA0NjI5YzRiMTY3MTEiCgpbW3BhY2thZ2VdXQpuYW1lID0gImF1dG9jZmciCnZlcnNpb24gPSAiMS4yLjAiCnNvdXJjZSA9ICJyZWdpc3RyeStodHRwczovL2dpdGh1Yi5jb20vcnVzdC1sYW5nL2NyYXRlcy5pby1pbmRleCIKY2hlY2tzdW0gPSAiZjFmZGFiYzc3NTY5NDk1OTNmZTYwZjMwZWM4MTk3NGI2MTMzNTdkZTg1Njk4Nzc1MjYzMWRlYTFlMzM5NGM4MCIKCltbcGFja2FnZV1dCm5hbWUgPSAiYml0ZmxhZ3MiCnZlcnNpb24gPSAiMi40LjIiCnNvdXJjZSA9ICJyZWdpc3RyeStodHRwczovL2dpdGh1Yi5jb20vcnVzdC1sYW5nL2NyYXRlcy5pby1pbmRleCIKY2hlY2tzdW0gPSAiZWQ1NzA5MzQ0MDZlYjE2NDM4YTRlOTc2YjFiNDUwMDc3NDA5OWMxM2I4Y2I5NmVlYzk5ZjYyMGYwNTA5MGRkZiIKCltbcGFja2FnZV1dCm5hbWUgPSAiZW5kaWFuLXR5cGUiCnZlcnNpb24gPSAiMC4xLjIiCnNvdXJjZSA9ICJyZWdpc3RyeStodHRwczovL2dpdGh1Yi5jb20vcnVzdC1sYW5nL2NyYXRlcy5pby1pbmRleCIKY2hlY2tzdW0gPSAiYzM0ZjA0NjY2ZDgzNWZmNWQ2MmUwNThjMzk5NTE0N2MwNmY0MmZlODZmZjA1MzMzNzYzMmJjYTgzZTQyNzAyZCIKCltbcGFja2FnZV1dCm5hbWUgPSAiaGV4Igp2ZXJzaW9uID0gIjAuNC4zIgpzb3VyY2UgPSAicmVnaXN0cnkraHR0cHM6Ly9naXRodWIuY29tL3J1c3QtbGFuZy9jcmF0ZXMuaW8taW5kZXgiCmNoZWNrc3VtID0gIjdmMjQyNTRhYTlhNTRiNWM4NThlYWVlMmY1YmNjZGI0NmFhZjBlNDg2YTU5NWVkNWZkOGY4NmJhNTUyMzJhNzAiCgpbW3BhY2thZ2VdXQpuYW1lID0gImhleC1saXRlcmFsIgp2ZXJzaW9uID0gIjAuNC4xIgpzb3VyY2UgPSAicmVnaXN0cnkraHR0cHM6Ly9naXRodWIuY29tL3J1c3QtbGFuZy9jcmF0ZXMuaW8taW5kZXgiCmNoZWNrc3VtID0gIjZmZTIyNjdkNGVkNDliYzA3YjYzODAxNTU5YmUyOGM3MThlYTA2YzQ3MzhiN2EwM2M5NGRmNzM4NmQyY2RlNDYiCgpbW3BhY2thZ2VdXQpuYW1lID0gIm11bHRpdmVyc3gtc2MiCnZlcnNpb24gPSAiMC40OC4wIgpzb3VyY2UgPSAicmVnaXN0cnkraHR0cHM6Ly9naXRodWIuY29tL3J1c3QtbGFuZy9jcmF0ZXMuaW8taW5kZXgiCmNoZWNrc3VtID0gImJhMTI5MWUzNzEyNzMxZjRlMzQ3NzUyNTRlOWE5YjhmZjcwMTMyZDE1NDE0ZjJlNTFmOWJjODJjMjNmYWY0OGMiCmRlcGVuZGVuY2llcyA9IFsKICJiaXRmbGFncyIsCiAiaGV4LWxpdGVyYWwiLAogIm11bHRpdmVyc3gtc2MtY29kZWMiLAogIm11bHRpdmVyc3gtc2MtZGVyaXZlIiwKICJudW0tdHJhaXRzIiwKXQoKW1twYWNrYWdlXV0KbmFtZSA9ICJtdWx0aXZlcnN4LXNjLWNvZGVjIgp2ZXJzaW9uID0gIjAuMTguNiIKc291cmNlID0gInJlZ2lzdHJ5K2h0dHBzOi8vZ2l0aHViLmNvbS9ydXN0LWxhbmcvY3JhdGVzLmlvLWluZGV4IgpjaGVja3N1bSA9ICIxZGE2ZGI2NTE3MDEwNWM5NDk1ODQ4YzVlNGJhMzg4YWJiMWY5MjAxZmYyY2EzNjIwNTZjOTMyOGYzNmI3NzYwIgpkZXBlbmRlbmNpZXMgPSBbCiAiYXJyYXl2ZWMiLAogIm11bHRpdmVyc3gtc2MtY29kZWMtZGVyaXZlIiwKXQoKW1twYWNrYWdlXV0KbmFtZSA9ICJtdWx0aXZlcnN4LXNjLWNvZGVjLWRlcml2ZSIKdmVyc2lvbiA9ICIwLjE4LjYiCnNvdXJjZSA9ICJyZWdpc3RyeStodHRwczovL2dpdGh1Yi5jb20vcnVzdC1sYW5nL2NyYXRlcy5pby1pbmRleCIKY2hlY2tzdW0gPSAiNjMxYzRkNGIzN2ZjOTQ2NTljOGQ2Y2Y1NTljMjFiNjhjNjg4OTkwOTUyMDFkZTJlMWI3NzlmY2NhZDdiMGIwMyIKZGVwZW5kZW5jaWVzID0gWwogImhleCIsCiAicHJvYy1tYWNybzIiLAogInF1b3RlIiwKICJzeW4iLApdCgpbW3BhY2thZ2VdXQpuYW1lID0gIm11bHRpdmVyc3gtc2MtZGVyaXZlIgp2ZXJzaW9uID0gIjAuNDguMCIKc291cmNlID0gInJlZ2lzdHJ5K2h0dHBzOi8vZ2l0aHViLmNvbS9ydXN0LWxhbmcvY3JhdGVzLmlvLWluZGV4IgpjaGVja3N1bSA9ICI5NWYwMzMxODkzYmUyYjc1NzQwMWIyZGVhZjdkOGI4YzkwNzQ1ZmE2OTExNDAwMGQ4M2ZlMjZkODQ4N2QzNWE1IgpkZXBlbmRlbmNpZXMgPSBbCiAiaGV4IiwKICJwcm9jLW1hY3JvMiIsCiAicXVvdGUiLAogInJhZGl4X3RyaWUiLAogInN5biIsCl0KCltbcGFja2FnZV1dCm5hbWUgPSAibXVsdGl2ZXJzeC1zYy13YXNtLWFkYXB0ZXIiCnZlcnNpb24gPSAiMC40OC4wIgpzb3VyY2UgPSAicmVnaXN0cnkraHR0cHM6Ly9naXRodWIuY29tL3J1c3QtbGFuZy9jcmF0ZXMuaW8taW5kZXgiCmNoZWNrc3VtID0gImY2YmQxOGRiYzcyYzgzYWEyZTlhZDNmNGEwMGRjYzI3YzAzYWRhNjZjMTNmOTA1NjAwMWRjOTE1NzA1NWQ2MTYiCmRlcGVuZGVuY2llcyA9IFsKICJtdWx0aXZlcnN4LXNjIiwKXQoKW1twYWNrYWdlXV0KbmFtZSA9ICJuaWJibGVfdmVjIgp2ZXJzaW9uID0gIjAuMS4wIgpzb3VyY2UgPSAicmVnaXN0cnkraHR0cHM6Ly9naXRodWIuY29tL3J1c3QtbGFuZy9jcmF0ZXMuaW8taW5kZXgiCmNoZWNrc3VtID0gIjc3YTVkODNkZjlmMzZmZTIzZjBjMzY0OGM2YmJiOGIwMjk4YmI1ZjE5MzljOGYyNzA0NDMxMzcxZjRiODRkNDMiCmRlcGVuZGVuY2llcyA9IFsKICJzbWFsbHZlYyIsCl0KCltbcGFja2FnZV1dCm5hbWUgPSAibnVtLXRyYWl0cyIKdmVyc2lvbiA9ICIwLjIuMTciCnNvdXJjZSA9ICJyZWdpc3RyeStodHRwczovL2dpdGh1Yi5jb20vcnVzdC1sYW5nL2NyYXRlcy5pby1pbmRleCIKY2hlY2tzdW0gPSAiMzllMzIwMDQxM2YyMzdmNDFhYjExYWQ2ZDE2MWJjNzIzOWM4NGRjYjYzMTc3M2NjZDdkZTNkZmU0YjVjMjY3YyIKZGVwZW5kZW5jaWVzID0gWwogImF1dG9jZmciLApdCgpbW3BhY2thZ2VdXQpuYW1lID0gInByb2MtbWFjcm8yIgp2ZXJzaW9uID0gIjEuMC43OCIKc291cmNlID0gInJlZ2lzdHJ5K2h0dHBzOi8vZ2l0aHViLmNvbS9ydXN0LWxhbmcvY3JhdGVzLmlvLWluZGV4IgpjaGVja3N1bSA9ICJlMjQyMmFkNjQ1ZDg5Yzk5ZjhmM2U2Yjg4YTlmZGVjYTdmYWJlYWM4MzZiMTAwMjM3MWM0MzY3YzhmOTg0YWFlIgpkZXBlbmRlbmNpZXMgPSBbCiAidW5pY29kZS1pZGVudCIsCl0KCltbcGFja2FnZV1dCm5hbWUgPSAicXVvdGUiCnZlcnNpb24gPSAiMS4wLjM1Igpzb3VyY2UgPSAicmVnaXN0cnkraHR0cHM6Ly9naXRodWIuY29tL3J1c3QtbGFuZy9jcmF0ZXMuaW8taW5kZXgiCmNoZWNrc3VtID0gIjI5MWVjOWFiNWVmZDkzNGFhZjUwM2E2NDY2YzVkNTI1MTUzNWQxMDhlZTc0NzQ3MmMzOTc3Y2M1YWNjODY4ZWYiCmRlcGVuZGVuY2llcyA9IFsKICJwcm9jLW1hY3JvMiIsCl0KCltbcGFja2FnZV1dCm5hbWUgPSAicmFkaXhfdHJpZSIKdmVyc2lvbiA9ICIwLjIuMSIKc291cmNlID0gInJlZ2lzdHJ5K2h0dHBzOi8vZ2l0aHViLmNvbS9ydXN0LWxhbmcvY3JhdGVzLmlvLWluZGV4IgpjaGVja3N1bSA9ICJjMDY5YzE3OWZjZGM2YTJmZTI0ZDhkMTgzMDVjZjA4NWZkYmQ0ZjkyMmMwNDE5NDNlMjAzNjg1ZDZhMWM1OGZkIgpkZXBlbmRlbmNpZXMgPSBbCiAiZW5kaWFuLXR5cGUiLAogIm5pYmJsZV92ZWMiLApdCgpbW3BhY2thZ2VdXQpuYW1lID0gInJvdXRlci1tb2NrIgp2ZXJzaW9uID0gIjAuMC4wIgpkZXBlbmRlbmNpZXMgPSBbCiAibXVsdGl2ZXJzeC1zYyIsCl0KCltbcGFja2FnZV1dCm5hbWUgPSAicm91dGVyLW1vY2std2FzbSIKdmVyc2lvbiA9ICIwLjAuMCIKZGVwZW5kZW5jaWVzID0gWwogIm11bHRpdmVyc3gtc2Mtd2FzbS1hZGFwdGVyIiwKICJyb3V0ZXItbW9jayIsCl0KCltbcGFja2FnZV1dCm5hbWUgPSAic21hbGx2ZWMiCnZlcnNpb24gPSAiMS4xMy4yIgpzb3VyY2UgPSAicmVnaXN0cnkraHR0cHM6Ly9naXRodWIuY29tL3J1c3QtbGFuZy9jcmF0ZXMuaW8taW5kZXgiCmNoZWNrc3VtID0gIjNjNWUxYTlhNjQ2ZDM2YzM1OTljZDE3M2E0MTI4MmRhZjQ3YzQ0NTgzYWQzNjdiOGU2ODM3MjU1OTUyZTVjNjciCgpbW3BhY2thZ2VdXQpuYW1lID0gInN5biIKdmVyc2lvbiA9ICIyLjAuNDgiCnNvdXJjZSA9ICJyZWdpc3RyeStodHRwczovL2dpdGh1Yi5jb20vcnVzdC1sYW5nL2NyYXRlcy5pby1pbmRleCIKY2hlY2tzdW0gPSAiMGYzNTMxNjM4ZTQwN2RmYzA4MTQ3NjFhYmI3YzAwYTViNTQ5OTJiODQ5NDUyYTA2NDZiN2Y2NWM5Zjc3MGYzZiIKZGVwZW5kZW5jaWVzID0gWwogInByb2MtbWFjcm8yIiwKICJxdW90ZSIsCiAidW5pY29kZS1pZGVudCIsCl0KCltbcGFja2FnZV1dCm5hbWUgPSAidW5pY29kZS1pZGVudCIKdmVyc2lvbiA9ICIxLjAuMTIiCnNvdXJjZSA9ICJyZWdpc3RyeStodHRwczovL2dpdGh1Yi5jb20vcnVzdC1sYW5nL2NyYXRlcy5pby1pbmRleCIKY2hlY2tzdW0gPSAiMzM1NGI5YWMzZmFlMWZmNjc1NWNiNmRiNTM2ODNhZGI2NjE2MzRmNjc1NTc5NDJkZWE0ZmFjZWJlYzBmZWU0YiIK",
+            "module": "router-mock",
+            "dependencyDepth": 0,
+            "isTestFile": false
+        },
+        {
+            "path": "router-mock/wasm/Cargo.toml",
+            "content": "IyBDb2RlIGdlbmVyYXRlZCBieSB0aGUgbXVsdGl2ZXJzeC1zYyBidWlsZCBzeXN0ZW0uIERPIE5PVCBFRElULgoKIyAjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMKIyAjIyMjIyMjIyMjIyMjIyBBVVRPLUdFTkVSQVRFRCAjIyMjIyMjIyMjIyMjCiMgIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCgpbcGFja2FnZV0KbmFtZSA9ICJyb3V0ZXItbW9jay13YXNtIgp2ZXJzaW9uID0gIjAuMC4wIgplZGl0aW9uID0gIjIwMjEiCnB1Ymxpc2ggPSBmYWxzZQoKW2xpYl0KY3JhdGUtdHlwZSA9IFsiY2R5bGliIl0KCltwcm9maWxlLnJlbGVhc2VdCmNvZGVnZW4tdW5pdHMgPSAxCm9wdC1sZXZlbCA9ICJ6IgpsdG8gPSB0cnVlCmRlYnVnID0gZmFsc2UKcGFuaWMgPSAiYWJvcnQiCm92ZXJmbG93LWNoZWNrcyA9IGZhbHNlCgpbZGVwZW5kZW5jaWVzLnJvdXRlci1tb2NrXQpwYXRoID0gIi4uIgoKW2RlcGVuZGVuY2llcy5tdWx0aXZlcnN4LXNjLXdhc20tYWRhcHRlcl0KdmVyc2lvbiA9ICIwLjQ4LjAiCgpbd29ya3NwYWNlXQptZW1iZXJzID0gWyIuIl0K",
+            "module": "router-mock",
+            "dependencyDepth": 0,
+            "isTestFile": false
+        },
+        {
+            "path": "router-mock/wasm/src/lib.rs",
+            "content": "Ly8gQ29kZSBnZW5lcmF0ZWQgYnkgdGhlIG11bHRpdmVyc3gtc2MgYnVpbGQgc3lzdGVtLiBETyBOT1QgRURJVC4KCi8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KLy8vLy8vLy8vLy8vLy8vLy8vIEFVVE8tR0VORVJBVEVEIC8vLy8vLy8vLy8vLy8vLy8vLwovLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vCgovLyBJbml0OiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEKLy8gRW5kcG9pbnRzOiAgICAgICAgICAgICAgICAgICAgICAgICAgICAxCi8vIEFzeW5jIENhbGxiYWNrIChlbXB0eSk6ICAgICAgICAgICAgICAgMQovLyBUb3RhbCBudW1iZXIgb2YgZXhwb3J0ZWQgZnVuY3Rpb25zOiAgIDMKCiMhW25vX3N0ZF0KIyFbYWxsb3coaW50ZXJuYWxfZmVhdHVyZXMpXQojIVtmZWF0dXJlKGxhbmdfaXRlbXMpXQoKbXVsdGl2ZXJzeF9zY193YXNtX2FkYXB0ZXI6OmFsbG9jYXRvciEoKTsKbXVsdGl2ZXJzeF9zY193YXNtX2FkYXB0ZXI6OnBhbmljX2hhbmRsZXIhKCk7CgptdWx0aXZlcnN4X3NjX3dhc21fYWRhcHRlcjo6ZW5kcG9pbnRzISB7CiAgICByb3V0ZXJfbW9jawogICAgKAogICAgICAgIGluaXQgPT4gaW5pdAogICAgICAgIGdldFBhaXIgPT4gZ2V0X3BhaXIKICAgICkKfQoKbXVsdGl2ZXJzeF9zY193YXNtX2FkYXB0ZXI6OmFzeW5jX2NhbGxiYWNrX2VtcHR5ISB7fQo=",
+            "module": "router-mock",
+            "dependencyDepth": 0,
+            "isTestFile": false
+        }
+    ]
+}

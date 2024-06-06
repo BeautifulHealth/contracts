@@ -1,0 +1,17 @@
+[workspace]
+members = [
+  "chain-config",
+  "chain-config/meta",
+  "chain-factory",
+  "chain-factory/meta",
+  "esdt-safe",
+  "esdt-safe/meta",
+  "fee-market",
+  "fee-market/meta",
+  "pair-mock",
+  "pair-mock/meta",
+  "router-mock",
+  "router-mock/meta",
+  "multisigverifier",
+  "multisigverifier/meta", 
+]

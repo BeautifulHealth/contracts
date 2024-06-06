@@ -1,0 +1,303 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.76.0-nightly",
+            "commitHash": "d86d65bbc19b928387f68427fcc3a0da498d8a19",
+            "commitDate": "2023-12-10",
+            "channel": "Nightly",
+            "short": "rustc 1.76.0-nightly (d86d65bbc 2023-12-10)"
+        },
+        "contractCrate": {
+            "name": "fee-market",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "multiversx-sc",
+            "version": "0.48.0"
+        }
+    },
+    "name": "FeeMarket",
+    "constructor": {
+        "inputs": [
+            {
+                "name": "esdt_safe_address",
+                "type": "Address"
+            },
+            {
+                "name": "price_aggregator_address",
+                "type": "Address"
+            },
+            {
+                "name": "usdc_token_id",
+                "type": "TokenIdentifier"
+            },
+            {
+                "name": "wegld_token_id",
+                "type": "TokenIdentifier"
+            }
+        ],
+        "outputs": []
+    },
+    "endpoints": [
+        {
+            "name": "upgrade",
+            "mutability": "mutable",
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "enableFee",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "disableFee",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "addFee",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "base_token",
+                    "type": "TokenIdentifier"
+                },
+                {
+                    "name": "fee_type",
+                    "type": "FeeType"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "removeFee",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "base_token",
+                    "type": "TokenIdentifier"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "getTokenFee",
+            "mutability": "readonly",
+            "inputs": [
+                {
+                    "name": "token_id",
+                    "type": "TokenIdentifier"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "FeeType"
+                }
+            ]
+        },
+        {
+            "name": "addUsersToWhitelist",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "users",
+                    "type": "variadic<Address>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "removeUsersFromWhitelist",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "users",
+                    "type": "variadic<Address>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "docs": [
+                "Percentages have to be between 0 and 10_000, and must all add up to 100% (i.e. 10_000)"
+            ],
+            "name": "distributeFees",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "address_percentage_pairs",
+                    "type": "variadic<multi<Address,u32>>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "subtractFee",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "original_caller",
+                    "type": "Address"
+                },
+                {
+                    "name": "total_transfers",
+                    "type": "u32"
+                },
+                {
+                    "name": "opt_gas_limit",
+                    "type": "optional<u64>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "FinalPayment"
+                }
+            ]
+        },
+        {
+            "name": "getUsersWhitelist",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "variadic<Address>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "name": "setMinValidSigners",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "new_value",
+                    "type": "u32"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "addSigners",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "signers",
+                    "type": "variadic<Address>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "removeSigners",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "signers",
+                    "type": "variadic<Address>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        }
+    ],
+    "esdtAttributes": [],
+    "hasCallback": false,
+    "types": {
+        "EsdtTokenPayment": {
+            "type": "struct",
+            "fields": [
+                {
+                    "name": "token_identifier",
+                    "type": "TokenIdentifier"
+                },
+                {
+                    "name": "token_nonce",
+                    "type": "u64"
+                },
+                {
+                    "name": "amount",
+                    "type": "BigUint"
+                }
+            ]
+        },
+        "FeeType": {
+            "type": "enum",
+            "variants": [
+                {
+                    "name": "None",
+                    "discriminant": 0
+                },
+                {
+                    "name": "Fixed",
+                    "discriminant": 1,
+                    "fields": [
+                        {
+                            "name": "token",
+                            "type": "TokenIdentifier"
+                        },
+                        {
+                            "name": "per_transfer",
+                            "type": "BigUint"
+                        },
+                        {
+                            "name": "per_gas",
+                            "type": "BigUint"
+                        }
+                    ]
+                },
+                {
+                    "name": "AnyToken",
+                    "discriminant": 2,
+                    "fields": [
+                        {
+                            "name": "base_fee_token",
+                            "type": "TokenIdentifier"
+                        },
+                        {
+                            "name": "per_transfer",
+                            "type": "BigUint"
+                        },
+                        {
+                            "name": "per_gas",
+                            "type": "BigUint"
+                        }
+                    ]
+                }
+            ]
+        },
+        "FinalPayment": {
+            "type": "struct",
+            "fields": [
+                {
+                    "name": "fee",
+                    "type": "EsdtTokenPayment"
+                },
+                {
+                    "name": "remaining_tokens",
+                    "type": "EsdtTokenPayment"
+                }
+            ]
+        }
+    }
+}
