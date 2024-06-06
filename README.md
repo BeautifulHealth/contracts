@@ -6,7 +6,7 @@ Beautiful Health is a decentralised healthcare record system designed for the Mu
 ### Useful Links
 1. Contract Address: erd1qqqqqqqqqqqqqpgq7d50l7gtdcp79hw2atjf42cem7up02avt73ssffcwt 
 2. Devnet Explorer: https://devnet-explorer.multiversx.com/accounts/erd1qqqqqqqqqqqqqpgq7d50l7gtdcp79hw2atjf42cem7up02avt73ssffcwt
-3. Dapp Address (In-Progress):
+3. Dapp Address (In-Progress): https://contracts-xi.vercel.app/
 4. Pistachio (fastAPI AI Analysis microservice): Deployment in progress, available for testing locally
 
 

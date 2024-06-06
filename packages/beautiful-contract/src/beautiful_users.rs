@@ -47,35 +47,6 @@ pub trait UsersModule {
         };
         self.users_store(&_addr).set(_user);
 
-        // for n in &_attr {
-        //     return _attr[n]
-        // }
-
     }
 
-    // function userNew(
-    //     Attributes.Attribute[] calldata attrs,
-    //     address signer,
-    //     uint deadline,
-    //     bytes calldata signature
-    //   ) 
-    //     external onlyAllowed(msg.sender) 
-    //   {
-    
-    //     for (uint i; i < attrs.length; i++) {
-    //       if (attrs[i].code == Attributes.Code.Timestamp) continue;
-    //       usersStore[addr].attrs.push(attrs[i]);
-    //     }
-    //     // Set timestamp
-    // usersStore[addr].attrs.push(Attributes.Attribute({
-    //     code: Attributes.Code.Timestamp,
-    //     value: abi.encodePacked(block.timestamp)
-    //   }));
-  
-    //   if (role == Role.Doctor) {
-    //     uint64 code = uint64(bytes8(IDHash)) % 99999999;
-    //     require(userCodes[code] == address(0), "AEX");
-    //     userCodes[code] = addr;
-    //   }
-    // }
 }
