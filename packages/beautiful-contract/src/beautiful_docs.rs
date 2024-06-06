@@ -33,7 +33,7 @@ pub trait DocsModule {
     fn cids(&self, user_addr: ManagedAddress) -> SingleValueMapper<Cid>;
 
     #[storage_mapper("epr_docs")]
-    fn epr_docs<M: multiversx_sc::api::ManagedTypeApi>(&self, epr_id: ManagedBuffer) -> SingleValueMapper<Vec<DocMeta<M>>>;
+    fn epr_docs<M: multiversx_sc::api::ManagedTypeApi>(&self, epr_id: ManagedBuffer, doc_type: Type) -> SingleValueMapper<Vec<DocMeta<M>>>;
 
     #[endpoint]
     fn set_epr_user(&self, id: UserID, epr_id: ManagedBuffer) {
@@ -55,35 +55,15 @@ pub trait DocsModule {
         // for n in self.epr_docs(&_id)
     }
 
-    // function setEhrDocAttr(
-    //     bytes32 ehrId,
-    //     IDocs.Type docType,
-    //     uint index,
-    //     Attributes.Code attrCode,
-    //     bytes memory value
-    // )
-    //     private
-    // {
-    //     for (uint i = 0; i < ehrDocs[ehrId][docType][index].attrs.length; i++) {
-    //         if (ehrDocs[ehrId][docType][index].attrs[i].code == attrCode) {
-    //             ehrDocs[ehrId][docType][index].attrs[i].value = value;
-    //             return;
-    //         }
-    //     }
-    // }
+    fn add_epr_doc(&self) {
 
+    }
 
-
-
+    fn get_epr_docs(&self, user_id_hash: ManagedBuffer, doc_type: Type) {
+        // self.epr_docs(user_id_hash, doc_type).get();
+    }
    
 
 }
-
-
-//     // ///
-//     // function getEhrUser(bytes32 userIDHash) public view returns(bytes32) {
-//     //     return ehrUsers[userIDHash];
-//     // }
-// }
 
 
