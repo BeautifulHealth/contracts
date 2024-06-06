@@ -21,14 +21,12 @@ from app.api.models import Analyse
 IMAGE_DIR = "images/"
 
 fake_analyse_db = [
+    {
+        'name': 'Starwars Episode 2',
+        'id': 1,
+        'analysis_hash': '0x001'
+    }
 ]
-# fake_analyse_db = [
-#     {
-#         'name': 'Starwars Episode 2',
-#         'id': 1,
-#         'analysis_hash': '0x001'
-#     }
-# ]
 
 analyse = APIRouter()
 
@@ -38,9 +36,6 @@ async def index():
 
 @analyse.post('/analyse', status_code = 201)
 async def add_analysis_job(file: UploadFile = File(...)):
-    # image = payload.dict()
-    # fake_analyse_db.append(image)
-
     file.filename = f"{uuid.uuid4()}.jpg"
     contents = await file.read()
  
