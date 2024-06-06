@@ -12,6 +12,8 @@ packages/beautiful-contract/**/*.rs.bk
 
 # VSCode config
 packages/beautiful-contract/.vscode
+packages/beautiful-contract/wallet
+packages/beautiful-contract/output
 
 target/**
 
@@ -20,5 +22,7 @@ packages/distributed-storage/bin
 wallet.pem
 
 packages/pistachio/env
-
 node_modules
+packages/pistachio/app/__pycache__/
+packages/pistachio/app/api/__pycache__/
+.venv

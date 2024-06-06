@@ -8,6 +8,7 @@ use multiversx_sc::{
     api::ManagedTypeApi,
     types::{ManagedAddress, ManagedBuffer, ManagedVec},
 };
+use multiversx_sc::proxy_imports::heap::Vec;
 
 pub type Version = u64;
 pub type Timestamp = u64;
@@ -40,7 +41,7 @@ pub struct DocMeta<M: ManagedTypeApi> {
     pub attr: ManagedVec<M, ManagedBuffer<M>>
 }
 
-#[derive(TopEncode, TopDecode, NestedEncode, NestedDecode)]
+#[derive(TopEncode, TopDecode, NestedEncode, NestedDecode, TypeAbi)]
 pub enum Code {
     Status,
     IDEncr,
@@ -56,7 +57,7 @@ pub enum Code {
     DataIndexID
 }
 
-#[derive(NestedEncode, NestedDecode, TopEncode, TopDecode)]
+#[derive(NestedEncode, NestedDecode, TopEncode, TopDecode, TypeAbi)]
 pub struct Attribute {
     pub code: Code,
     pub value: u64,
@@ -82,3 +83,32 @@ pub struct DocumentGroup {
 //     bytes[]                           CIDEncrs;   // CIDs encrypted with the group key 
 //     bytes32[]                         userGroups; // userGroups that have access to this group
 // }
+
+
+#[derive(TopEncode, TopDecode, NestedEncode, NestedDecode, TypeAbi)]
+pub enum Role { Patient, Doctor }
+
+#[derive(NestedEncode, NestedDecode, TopEncode, TopDecode)]
+pub struct User <M: ManagedTypeApi> {
+    pub ID_hash: ManagedBuffer<M>,
+    pub role: Role,
+    // pub attr: Vec<Attribute>
+}
+
+#[derive(NestedEncode, NestedDecode, TopEncode, TopDecode)]
+pub struct GroupMember <M: ManagedTypeApi> {
+    pub user_id_hash: ManagedBuffer<M>,
+    pub user_id_encr: ManagedBuffer<M>,
+}
+
+#[derive(NestedEncode, NestedDecode, TopEncode, TopDecode)]
+pub struct UserGroup <M: ManagedTypeApi> {
+    pub attrs: Vec<Attribute>,
+    pub members: Vec<GroupMember<M>>
+}
+
+// struct UserGroup {
+//     Attributes.Attribute[] attrs;
+//     GroupMember[] members;  
+//   }
+
