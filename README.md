@@ -89,6 +89,7 @@ Together, let’s build a world where health is beautiful, data is secure, and e
 1. Blockchain Implementation: Deploy the core Rust contracts on the Multiverse X Devnet.
 2. API Gateway Launch: Develop and launch the API gateway service.
 3. AI Model Integration: Integrate the initial AI diagnostic model for chest radiograph analysis using FastAPI.
+4. Integrate content addressible Distributed File Storage.
 
 #### Phase 2: System Expansion (Q4 2024)
 1. Integrate Cartesi VM for decentralised AI analysis.
